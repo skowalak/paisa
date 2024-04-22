@@ -110,5 +110,8 @@
     "vite-plugin-node-polyfills": "^0.19.0",
     "wait-port": "^1.1.0"
   },
-  "type": "module"
+  "type": "module",
+  "overrides": {
+    "rollup": "npm:@rollup/wasm-node"
+  }
 }
