@@ -10,7 +10,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: skowalak/paisa
-  PLATFORMS: linux/amd64,linux/arm64,linux/arm/v7,linux/riscv64
+  PLATFORMS: linux/amd64,linux/arm64,linux/arm32v7,linux/riscv64
 
 jobs:
   build-and-push-docker-image:
