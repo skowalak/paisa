@@ -2,15 +2,16 @@ name: Docker Image Release
 on:
   workflow_dispatch:
   push:
-    branches:
-      - ci/docker-*
-    tags:
-      - '*'
+    #branches:
+    #  - ci/docker-*
+    #tags:
+    #  - '*'
 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: skowalak/paisa
-  PLATFORMS: linux/amd64,linux/arm64,linux/arm32v7,linux/riscv64
+    #PLATFORMS: linux/amd64,linux/arm64,linux/arm32v7,linux/riscv64
+  PLATFORMS: linux/arm32v7
 
 jobs:
   build-and-push-docker-image:
