@@ -1,4 +1,4 @@
-FROM arm32v7/node:18-alpine3.18 as web
+FROM arm32v7/node:21-alpine3.18 as web
 WORKDIR /usr/src/paisa
 COPY package.json package-lock.json* ./
 RUN npm install
